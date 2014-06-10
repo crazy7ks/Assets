@@ -30,6 +30,9 @@ public class EnemyRespawn : MonoBehaviour
             Vector3 pos = transform.position;
             pos.x = Random.Range(m_fMinX, m_fMaxX);
             GameObject enemy = Instantiate(m_enemyPrefap1, pos, transform.rotation) as GameObject;
+
+            enemy.transform.parent = gameObject.transform;
+
         }
 	}
 }

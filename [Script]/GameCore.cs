@@ -17,7 +17,7 @@ public class GameCore : MonoBehaviour
         {
             m_playerBullet[n] = Instantiate(BulletPrefabs) as GameObject;
             m_playerBullet[n].SetActive(false);
-
+            m_playerBullet[n].transform.parent = gameObject.transform;
             Debug.Log(m_playerBullet[n]);
         }
 	}
