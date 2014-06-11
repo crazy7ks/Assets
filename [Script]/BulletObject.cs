@@ -34,8 +34,6 @@ public class BulletObject : MonoBehaviour {
                 //    Destroy(transform.gameObject);
                 //}
             }
-
-
         }
 
         transform.Translate(transform.forward * speed * Time.deltaTime);
